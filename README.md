@@ -34,6 +34,22 @@ A FastAPI-based service that automates interactions with ChatGPT using Playwrigh
     playwright install chromium
     ```
 
+## Docker Deployment
+
+You can deploy the service using Docker:
+
+1.  **Build the Docker image**:
+    ```bash
+    docker build -t ai-api .
+    ```
+
+2.  **Run the container**:
+    ```bash
+    docker run -d -p 8000:8000 --name ai-api-container ai-api
+    ```
+    
+    The API will be available at `http://localhost:8000`.
+
 ## Usage
 
 1.  **Start the server**:
